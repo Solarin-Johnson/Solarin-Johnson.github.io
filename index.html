@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Engine</title>
+    <title>Search News and Image</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <script src="main.js" defer></script>
-<script src="fa/all.js"></script>
+<script src="fa/all.js" defer></script>
 
 <body>
     <div id="container">
         <div id="head">
+
             <div id="service">
                 <div id="news">News</div>
-                <div id="image">Image</div>
+                <div id="image" onclick="image()">Image</div>
             </div>
             <div>
                 <select id="countriesDropdown">
@@ -48,7 +49,7 @@
                 </div>
             </div>
             <div id="suggestions">
-                <div>Headlines</div>
+                <div class="headlines">Headlines</div>
                 <div>BBC news</div>
                 <div>BBC news</div>
                 <div>Football</div>
