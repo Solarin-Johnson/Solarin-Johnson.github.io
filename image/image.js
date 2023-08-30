@@ -18,14 +18,15 @@ function setDefault() {
         sessionStorage.setItem('safe_search', false)
         var safe = sessionStorage.getItem('safe_search')
     }
-    if (sessionStorage.getItem('imageq') == null) {
+    if (sessionStorage.getItem('imageq') == null || sessionStorage.getItem('imageq') == '') {
         sessionStorage.setItem('imageq', '')
+    } else {
+        searchq = document.getElementById('search_image')
+        searchq.value = sessionStorage.getItem('imageq')
     }
     var safe = sessionStorage.getItem('safe_search')
     var choice = sessionStorage.getItem('editors_choice')
 
-    searchq = document.getElementById('search_image')
-    searchq.value = sessionStorage.getItem('imageq')
     imageq = sessionStorage.getItem('imageq').replace(/\s+/g, '-')
     ctgry = document.getElementById('image_category')
     ctgry.value = sessionStorage.getItem('image_category')
