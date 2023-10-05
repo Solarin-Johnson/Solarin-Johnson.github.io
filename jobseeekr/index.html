@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to get a Job now">
+    <meta name="application-name" content="JobSeekr">
+    <title>JobSeekr</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:title" content="JobSeekr">
+    <meta property="og:description" content="Thousands of Jobs posted here everyday, Find The Job That Suits You Today!">
+    <meta property="og:property" content="website">
+    <meta property="og:site_name" content="JobSeekr">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="index">
+        <div id="header">
+            <div class="logo">
+                <!-- <img src="logo.png" alt="Logo"> -->
+            </div>
+            <div id="nav">
+                <div id="mode">
+                    <div class="material-symbols-outlined">
+                        dark_mode
+                    </div>
+                </div>
+                <div class="apply" id="apply">
+                    Apply
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div id="content">
+                <div id="title">
+                    Find your dream <span class="job"> Job </span>
+                </div>
+                <div id="sub">
+                    Thousands of Jobs posted here everyday, Find The Job That Suits You Today!
+                </div>
+                <div class="apply" id="btn">
+                        Apply
+                </div>
+                <div id="newsletter">
+                    <div id="subscribe">Subscribe To Our Newsletter</div>
+                    <div id="input">
+                        <input type="email" placeholder="Please enter your Email address" name="xmail" id="xmail">
+                        <div class="apply">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+            <div id="image">
+
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div id="close">
+            <span class="material-symbols-outlined">
+                close
+                </span>
+            <div class="logo"></div>
+        </div>
+        <div id="info">Your information, All fields required</div>
+        <form id="form">
+            <div id="name">
+                <div id="details" class="fname">
+                    <span>Firstname</span>
+                    <input type="text" name="firstname" class="field" id="fname" placeholder="John" required>
+                </div>            
+                <div id="details" class="sname">
+                    <span>Surname</span>
+                    <input type="text" name="surname" class="field" id="sname" placeholder="Doe" required>
+                </div>            
+            </div>
+            <div id="details" class="email">
+                <span>Email</span>
+                <input type="email" name="mail" class="field" id="email" placeholder="John@doe.com" required>
+            </div>            
+            <div id="cluster">
+                <div id="details" class="phone">
+                    <span>Phone</span>
+                    <input type="number" maxlength="10" minlength="10" name="mail" class="field" id="email" placeholder="0123456789" required>
+                </div>
+                <div id="details" class="phone">
+                    <span>ID</span>
+                    <label class="file field fade" for="id">
+                        <div id="upload">Upload Id</div>
+                        <div id="eg">eg. Driver's Licence</div>
+                    </label>
+                    <input type="file" name="id" class="field" id="id" placeholder="Id" required>
+                </div>
+            </div>
+            <div id="cluster">
+                <div id="details" class="country">
+                    <span>Country</span>
+                    <select name="country" class="field" id="country">
+                        <option value="">-- Select --</option>
+                    </select>
+                </div>
+                <div id="details" class="city">
+                    <span>City</span>
+                    <input type="text" minlength="10" name="city" class="field" id="city" placeholder="City" required>
+                </div>
+            </div>
+            <div id="cluster">
+                <div id="details" class="zip">
+                    <span>Zip Code</span>
+                    <input type="text" minlength="9" name="zip" class="field" id="zip" placeholder="Zip Code" required>
+                    <div id="zip_err"></div>
+                </div>
+                <div id="details" class="city">
+                    <span>SSN</span>
+                    <input type="number" minlength="9" maxlength="9" name="ssn" class="field" id="ssn" placeholder="123-45-6789">
+                </div>
+            </div>
+            <div id="submit">
+                <button id="val">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- <img src="logo.png" alt=""> -->
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
