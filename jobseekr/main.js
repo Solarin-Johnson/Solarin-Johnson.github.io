@@ -80,8 +80,12 @@ function modechange() {
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     var div = document.querySelectorAll('div');
+    var xbutton = document.querySelectorAll('button');
     for (var i = 0; i < div.length; i++) {
         div[i].style.cursor = 'none';
+    }
+    for (var i = 0; i < xbutton.length; i++) {
+        xbutton[i].style.cursor = 'none';
     }
 }
 

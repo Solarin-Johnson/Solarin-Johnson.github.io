@@ -86,6 +86,7 @@ body {
     font-size: 25px !important;
     color: inherit;
     cursor: pointer;
+    width: 25px;
 }
 
 .material-symbols-outlined:hover {
@@ -329,7 +330,7 @@ form {
     /* grid-gap: auto; */
     /* justify-items: center; */
     /* padding: 0 20px; */
-    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 105px));
     grid-gap: .1px;
     font-family: 'Gabarito', Arial, Helvetica, sans-serif;
 }
@@ -387,7 +388,7 @@ select {
 
 #val {
     display: grid;
-    border-radius: 4px;
+    border-radius: 6px;
     color: #fff;
     justify-content: center;
     align-content: center;
@@ -396,6 +397,8 @@ select {
     transition: 0.5s ease-out transform;
     cursor: pointer;
     border: none;
+    font-family: 'Gabarito', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 #val:hover {
@@ -452,8 +455,8 @@ select option:hover {
 
 @media screen and (max-width: 600px) {
     form {
-        box-shadow: none;
-        grid-template-rows: 200px 100px 200px 200px 200px 100px;
+        box-shadow: none !important;
+        grid-template-rows: 200px 100px 200px 200px 200px 90px;
         padding: 10px 0px;
     }
 
@@ -505,6 +508,8 @@ select option:hover {
 }
 
 ::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    cursor: pointer;
     background-color: #7272727a;
 }
 
