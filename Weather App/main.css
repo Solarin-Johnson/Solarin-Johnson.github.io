@@ -5,7 +5,7 @@ body {
     background-color: antiquewhite;
     background: url(background-alt.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: cover;
     background-position: center;
     display: grid;
     grid-template-rows: 500px;
