@@ -9,7 +9,7 @@ body {
     background-position: center;
     display: grid;
     grid-template-rows: 500px;
-    grid-template-columns: 300px;
+    grid-template-columns: auto;
     justify-content: center;
     align-content: center;
     animation-name: change;
@@ -80,6 +80,8 @@ body {
 
 #container {
     display: grid;
+    width: 40vw;
+    min-width: 300px;
     grid-template-rows: 100px 100px 1fr 30px;
     grid-gap: 20px;
     background-color: #fff;
