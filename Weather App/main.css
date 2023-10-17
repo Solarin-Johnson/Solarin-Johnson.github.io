@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    background: url(background-alt.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 300px;
+    justify-content: center;
+    align-content: center;
+    animation-name: change;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change {
+    5% {
+        background: url(background-alt.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: right;
+    }
+
+    20% {
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        background-position: top;
+
+    }
+
+    35% {
+        background: url(hot-weather-alt.webp);
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: center;
+    }
+
+    40% {
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        background-position: right;
+    }
+
+    55% {
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        background-position: top;
+    }
+
+    70% {
+        background: url(hot-weather.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: center;
+    }
+
+    75% {
+        background-repeat: no-repeat;
+        background-size: 2000;
+        background-position: right;
+    }
+
+    90% {
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        background-position: top;
+    }
+
+    100% {
+        background: url(background-alt.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: center;
+    }
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 100px 100px 1fr 30px;
+    grid-gap: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px #000;
+    color: #063f02;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container div {
+    display: grid;
+}
+
+#head {
+    display: grid;
+    font-size: 30px;
+    align-content: center;
+    color: #052303;
+}
+
+#body {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 1px;
+}
+
+#city select {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #052303;
+    color: #052303;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#btn {
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid #052303;
+    display: grid;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #052303;
+    color: #fff;
+    font-weight: normal;
+}
+
+hr {
+    width: 150px;
+    color: #052303;
+    margin-top: 10px;
+}
+
+#results {
+    width: 180px;
+    display: grid;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#footer {
+    font-size: 10px;
+}
