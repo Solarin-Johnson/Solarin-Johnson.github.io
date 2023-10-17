@@ -21,7 +21,7 @@ body {
     5% {
         background: url(background-alt.jpg);
         background-repeat: no-repeat;
-        background-size: 1500px;
+        background-size: cover;
         background-position: right;
     }
 
@@ -35,7 +35,7 @@ body {
     35% {
         background: url(hot-weather-alt.webp);
         background-repeat: no-repeat;
-        background-size: 1500px;
+        background-size: cover;
         background-position: center;
     }
 
@@ -54,13 +54,13 @@ body {
     70% {
         background: url(hot-weather.jpg);
         background-repeat: no-repeat;
-        background-size: 1500px;
+        background-size: cover;
         background-position: center;
     }
 
     75% {
         background-repeat: no-repeat;
-        background-size: 2000;
+        background-size: 2000px;
         background-position: right;
     }
 
@@ -73,7 +73,7 @@ body {
     100% {
         background: url(background-alt.jpg);
         background-repeat: no-repeat;
-        background-size: 1500px;
+        background-size: cover;
         background-position: center;
     }
 }
